@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests" thread-count="4" verbose="10">
+	<test name="VerifyActorNameTestChrome">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="ua.com.lits.automation.java.mavenTest.VerifyActorNameTest" />
+		</classes>
+	</test>
+	<test name="VerifyActorNameTestFirefox">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			<class name="ua.com.lits.automation.java.mavenTest.VerifyActorNameTest" />
+		</classes>
+
+	</test>
+</suite>
